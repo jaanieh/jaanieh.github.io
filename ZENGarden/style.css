@@ -12,13 +12,14 @@
 html {
 	margin: 0;
 	padding: 0;
+     background: #fff url(http://www.technocrazed.com/wp-content/uploads/2015/12/HD-Space-Wallpaper-For-Background-21.jpg) no-repeat bottom right;
 	}
 body { 
 	font: 75% verdana, sans-serif;
 	line-height: 1.88889;
 	color: #555753; 
 	background: #fff url(http://www.technocrazed.com/wp-content/uploads/2015/12/HD-Space-Wallpaper-For-Background-21.jpg) no-repeat bottom right; 
-	margin: 0; 
+	margin: 30px; 
 	padding: 0;
 	}
 p { 
@@ -52,12 +53,12 @@ abbr {
 
 /* specific divs */
 .page-wrapper { 
-	/* background: url(http://csszengarden.com/001/zen-bg.jpg) no-repeat top left; */
+	/* background: transparent url(http://csszengarden.com/001/zen-bg.jpg) no-repeat top left; */
 	background: rgba(255, 255, 255, 0.8);
-	padding: 0 175px 0 110px;  
 	margin: 0; 
 	position: relative;
 	border-radius: 20px;
+padding-right: 200px;
 	}
 
 .intro { 
@@ -66,7 +67,7 @@ abbr {
 	}
 
 header h1 { 
-	/*background: transparent url(http://csszengarden.com/001/h1.gif) no-repeat top left; */
+	background: transparent url(http://csszengarden.com/001/h1.gif) no-repeat top left; 
 	margin-top: 10px;
 	display: block;
 	width: 219px;
@@ -129,13 +130,15 @@ footer a:link, footer a:visited {
 	}
 .sidebar .wrapper { 
 	font: 10px verdana, sans-serif; 
-	background: rgba(255, 255, 255, 0.8);
+	background: rgba(255, 255, 255, 0.6);
 	padding: 10px; 
 	margin-top: 150px; 
 	width: 130px; 
+border-radius: 20px;
+
 	}
 .sidebar h3.select { 
-	background: rgba(255, 255, 255, 0.8);
+	/*background: rgba(255, 255, 255, 0.8);*/
 	margin: 10px 0 5px 0; 
 	width: 97px; 
 	height: 16px; 
