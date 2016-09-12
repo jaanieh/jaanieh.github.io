@@ -6,6 +6,12 @@
 
 <style>
 
+body {
+width: 850px;
+background: #fff url("https://wallpaperscraft.com/image/space_planets_improvisation_light_43469_2560x1440.jpg") no-repeat fixed center;
+
+}
+
 li {
 display: inline-block;
 border: 1px solid black;
@@ -43,6 +49,22 @@ box-shadow: 0px 0px;
 background-color: white;
 }
 
+input {
+text-align: center;
+background-color: pink;
+
+}
+
+.form {
+text-align: center;
+background: rgba(54, 25, 25, .2);
+border-radius: 20px;
+}
+
+label {
+font-family: arial;
+font-size: 14px;
+}
 
 </style>
 
@@ -57,8 +79,41 @@ background-color: white;
 <li><a href="#">Testknapp</a></li>
 <li><button type="button"><a href="#">Button</a></button></li>
 </ul>
-</nav>
+</nav
 
+
+<form action="#" method="get">
+<div class="form">
+<label for="name">Namn:</label><br>
+<input type="text" name="namn" id="name" placeholder="Skriv ditt namn här">
+
+
+<br><br>
+<label for="nr">Kortnummer:</label><br>
+<input type="text" name="nummer" id="nr" placeholder="tex 0241...">
+<br><br>
+<input type="checkbox" name="checkme" id="internet"/>
+<label for="internet">Jag vill betala med internetbank</label>
+
+<br><br>
+<label>Korttyp</label><br>
+<select>
+<option>VISA</option>
+<option>MasterCard</option>
+<option>Maestro</option>
+</select>
+<br><br>
+<label for="card">Giltigt till:</label><br>
+<input type="month" name="card" id="card">
+<br><br>
+<label>Vill du ha framtida information om våra produkter?</label><br><br>
+<input type="radio" name="info" id="ja"/> <label for="ja">Ja</label> <br>
+<input type="radio" name="info" id="nej"/> <label for="nej">Nej</label> <br><br><br>
+
+<label>Övrig information:</label><br>
+<textarea rows="4" cols="50"></textarea>
+</div>
+</form>
 
 </body>
 </html>

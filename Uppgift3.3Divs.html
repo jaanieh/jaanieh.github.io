@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title> Nästlade Divs</title>
+<style>
+
+body {
+width: 550px;
+}
+
+#table {
+border: 2px solid grey;
+width: 540px;
+}
+
+#head {
+width:700px; }
+
+.row {
+width: 700px;
+}
+
+.cell {
+display: inline-block;
+background-color: beige;
+border: 2px dotted orange;
+font-size: 18px;
+padding-left: 2px;
+padding-right: 2px;
+margin: 2px;
+
+width: 120px;
+}
+
+#head > .cell{
+background-color: #e6ca70;
+border: 4px dashed brown;
+font-size: 18px;
+font-weight: bold;
+padding-left: 2px;
+padding-right: 2px;
+width: 116px;
+text-align: center;
+}
+
+.row .cell:nth-child(4)  {
+text-align: right;
+}
+
+.row .cell:nth-child(3) {
+text-align: center;
+}
+
+.row:nth-child(2) > .cell:nth-child(3) {
+background-color: gold;
+}
+.row:nth-child(3) > .cell:nth-child(3) {
+background-color: silver;
+}
+
+.row:nth-child(4) > .cell:nth-child(3) {
+background-color: #8d731b;
+}
+ 
+.rubrik {
+text-align: center;
+font-weight: bold;
+font-size: 22px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="rubrik">Kula, damer OS 2016</div>
+
+<div id="table">
+<div id="head">
+	<div class="cell">Idrottare</div>
+	<div class="cell">Resultat</div>
+	<div class="cell">Placering</div>
+	<div class="cell">Land</div>
+</div>
+<div class ="row">
+	<div class="cell">Michelle Carter</div>
+	<div class="cell">20,63 m</div>
+	<div class="cell">1</div>
+	<div class="cell">USA</div>
+</div>
+<div class="row">
+	<div class="cell">Valerie Adams</div>
+	<div class="cell">20,42 m</div>
+	<div class="cell">2</div>
+	<div class="cell">Nya Zeeland</div>
+</div>
+<div class="row">
+	<div class="cell">Anita Marton</div>
+	<div class="cell">19,87</div>
+	<div class="cell">3</div>
+	<div class="cell">Ungern</div>
+</div>
+<div class="row">
+	<div class="cell">Gong Lijiao</div>
+	<div class="cell">19.39</div>
+	<div class="cell">4</div>
+	<div class="cell">Kina</div>
+</div>
+</div>
+</body>
+</html>
