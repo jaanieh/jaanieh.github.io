@@ -12,14 +12,14 @@
 html {
 	margin: 0;
 	padding: 0;
-     background: #fff url(http://www.technocrazed.com/wp-content/uploads/2015/12/HD-Space-Wallpaper-For-Background-21.jpg) no-repeat bottom right;
 	}
 body { 
 	font: 75% verdana, sans-serif;
 	line-height: 1.88889;
+	font-size: 12px;
 	color: #555753; 
-	background: #fff url(http://www.technocrazed.com/wp-content/uploads/2015/12/HD-Space-Wallpaper-For-Background-21.jpg) no-repeat bottom right; 
-	margin: 30px; 
+	background: #000 url(bgpic.jpg) no-repeat top center fixed; 
+	margin: 0; 
 	padding: 0;
 	}
 p { 
@@ -27,7 +27,7 @@ p {
 	text-align: justify;
 	}
 h3 { 
-	font: italic normal 1.4em verdana, sans-serif;
+	font: italic normal 1.4em georgia, sans-serif;
 	letter-spacing: 1px; 
 	margin-bottom: 0; 
 	color: #7D775C;
@@ -53,52 +53,76 @@ abbr {
 
 /* specific divs */
 .page-wrapper { 
-	/* background: transparent url(http://csszengarden.com/001/zen-bg.jpg) no-repeat top left; */
-	background: rgba(255, 255, 255, 0.8);
+	
+	padding: 0;  
 	margin: 0; 
 	position: relative;
-	border-radius: 20px;
-padding-right: 200px;
 	}
 
-.intro { 
-	min-width: 470px;
-	width: 100%;
+ .preamble, .explanation, .participation, .benefits, .requirements{ 
+	background: rgba(255, 255, 255, 0.7);
+	border-radius: 20px;
+	width: 475px;
+	position: relative;
+	left: 180px;
+	padding: 10px;
+	margin: 5px;
+	/*min-width: 470px;
+	width: 100%;*/
 	}
+	
+	.preamble {
+		position: relative;
+		left: 190px;
+	}
+	
+	
+
 
 header h1 { 
-	background: transparent url(http://csszengarden.com/001/h1.gif) no-repeat top left; 
-	margin-top: 10px;
+	background: transparent url(logo.png) no-repeat top center;
+	position: fixed;
+	margin-top: 0px;
+	margin-left: 10;
 	display: block;
-	width: 219px;
-	height: 87px;
+	width: 165px;
+	height: 187px;
 	float: left;
-
+background-color: black;
+	border-radius: 20px;
 	text-indent: 100%;
 	white-space: nowrap;
 	overflow: hidden;
 	}
 header h2 { 
-	/*background: transparent url(http://csszengarden.com/001/h2.gif) no-repeat top left; */
-	margin-top: 58px; 
-	margin-bottom: 40px; 
-	width: 200px; 
-	height: 18px; 
-	float: right;
+	position: relative;
+	margin-top: 0px; 
+	margin-bottom: 0px; 
+	margin-left: 200px;
+	font-family: 'century gothic', georgia;
+	font-size: 40px;
 
-	text-indent: 100%;
+	/*text-indent: 100%;
 	white-space: nowrap;
-	overflow: hidden;
-	}
+	overflow: hidden;*/
+}
+	
 header {
 	padding-top: 20px;
 	height: 87px;
 }
 
+@media (min-width: 1000px){
+
 .summary {
-	clear: both; 
-	margin: 20px 20px 20px 10px; 
-	width: 160px; 
+	clear: left; 
+	position: fixed;
+	top: 180px;
+	padding: 10px 10px 10px 10px; 
+	width: 145px; 
+	color: white;
+	background-color: black;
+	border-radius: 20px;
 	float: left;
 	}
 .summary p {
@@ -106,10 +130,14 @@ header {
 	text-align: center;
 	}
 
-.preamble {
+	
+	
+}
+
+/*.preamble {
 	clear: right; 
 	padding: 0px 10px 0 10px;
-	}
+	}*/
 .supporting {	
 	padding-left: 10px; 
 	margin-bottom: 40px;
@@ -124,44 +152,45 @@ footer a:link, footer a:visited {
 
 .sidebar {
 	margin-left: 600px; 
-	position: absolute; 
+	position: fixed; 
 	top: 0; 
 	right: 0;
+	color: #ffffff
 	}
 .sidebar .wrapper { 
 	font: 10px verdana, sans-serif; 
-	background: rgba(255, 255, 255, 0.6);
+	/*background: transparent url(http://csszengarden.com/001/paper-bg.jpg) top left repeat-y;*/
+	background: rgba(255, 255, 255, 0.3);
+	border-radius: 15px;
 	padding: 10px; 
-	margin-top: 150px; 
+	margin-top: 0px; 
 	width: 130px; 
-border-radius: 20px;
-
 	}
 .sidebar h3.select { 
-	/*background: rgba(255, 255, 255, 0.8);*/
-	margin: 10px 0 5px 0; 
-	width: 97px; 
-	height: 16px; 
+	background: transparent url(selectdesign.png) no-repeat top left;
+	margin: 5px 0 5px 0; 
+	width: 127px; 
+	height: 35px; 
 
 	text-indent: 100%;
 	white-space: nowrap;
 	overflow: hidden;
 	}
 .sidebar h3.archives { 
-	background: rgba(255, 255, 255, 0.8);
-	margin: 25px 0 5px 0; 
-	width:57px; 
-	height: 14px; 
+	background: transparent url(archive.png) no-repeat top left; 
+	margin: 15px 0 5px 0; 
+	width:127px; 
+	height: 35px; 
 
 	text-indent: 100%;
 	white-space: nowrap;
 	overflow: hidden;
 	}
 .sidebar h3.resources { 
-	background: rgba(255, 255, 255, 0.8);
-	margin: 25px 0 5px 0; 
-	width:63px; 
-	height: 10px; 
+	background: transparent url(resources.png) no-repeat top left; 
+	margin: 15px 0 5px 0; 
+	width:127px; 
+	height: 35px; 
 
 	text-indent: 100%;
 	white-space: nowrap;
@@ -175,25 +204,34 @@ border-radius: 20px;
 	}
 .sidebar li {
 	line-height: 1.3em; 
-	background: transparent url(http://csszengarden.com/001/cr1.gif) no-repeat top center; 
+	/*background: transparent url(http://csszengarden.com/001/cr1.gif) no-repeat top center; */
 	display: block; 
 	padding-top: 5px; 
 	margin-bottom: 5px;
 	list-style-type: none;
 	}
 .sidebar li a:link {
-	color: #988F5E;
+	color: #d7bcc4;
 	}
 .sidebar li a:visited {
 	color: #B3AE94;
 	}
 
 
-.extra1 {
-	/* background: transparent url(http://csszengarden.com/001/cr2.gif) top left no-repeat; */
+
+
+	
+	
+	
+	
+/*.extra1 {
+	background: transparent url(http://csszengarden.com/001/cr2.gif) top left no-repeat; 
 	position: absolute; 
 	top: 40px; 
 	right: 0; 
 	width: 148px; 
-	height: 110px;
-	}
+height: 110px; */ }
+
+
+
+	

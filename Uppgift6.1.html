@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Float</title>
+<style>
+
+body {
+font-family: Arial;
+font-size: 18px;
+color: gray;
+background: #fff url("http://www.pixelstalk.net/wp-content/uploads/2016/05/Light-pink-Gradient-Background.jpg") fixed no-repeat;
+}
+
+
+
+.wrap, .table {
+margin-top: 50px;
+margin-left: 200px;
+}
+
+.text {
+
+}
+
+img {
+float: left;
+margin: 20px;
+
+}
+
+.wrap {
+width: 700px;
+border: 2px solid gray;
+border-radius: 10px;
+padding: 10px;
+background: rgba(255, 255, 255, .3);
+
+}
+
+#tablecontent > div {
+/*width: 700px;*/
+border: 2px solid gray;
+border-radius: 10px;
+padding: 10px;
+background: rgba(255, 255, 255, .3);*/
+
+}
+
+.table {
+width: 700px;
+
+border: 2px solid gray;
+display: table;
+background-color: lightgreen;
+padding: 10px;
+border-radius: 10px;
+margin-bottom: 50px;
+}
+.table > div {
+display: table-row;
+
+}
+.table > div > div { 
+display: table-cell;
+width: 200px;
+text-align: center;
+
+}
+
+
+header, nav, article, aside, footer {
+border: 1px solid gray;
+border-radius: 10px;
+padding: 10px;
+
+}
+
+header {
+flex: 1 1 auto;
+background-color: white;
+}
+
+
+nav {
+flex: 1 1 auto;
+background-color: lightgreen;
+height: 300px;
+}
+
+article {
+flex: 8 1 auto;
+background-color: beige;
+}
+
+aside {
+flex: 1 1 auto;
+background-color: lightpink;
+}
+
+
+footer {
+flex: 1 1 auto;
+background-color: white;
+}
+
+#container > * {
+flex: 1 1 auto;
+}
+
+#inline-container {
+display: flex;
+flex-direction: row;
+flex: 2 1 auto;
+}
+
+
+</style>
+
+</head>
+<body>
+<div class="wrap">
+<img src="https://cdn1.thehunt.com/app/public/system/zine_images/1242974/hunt/ceebb7ec848af3310364d34b324be6a1.jpg">
+<p="text">
+Vans. Off the Wall Since 1966. is an iconic, Southern California-based, youth culture brand and the original action sports footwear company.  Today, Vans is a leading global footwear, apparel and accessory brand available in more than 170 countries worldwide. <br><br>The Vans brand is driven  by creative self-expression. brought to life through the worlds ofart music, action sports and street culture. Ourextended family of snowboarding, surfing, skateboarding and bmx athletes, artists, musicians.  designers, and photographers provide inspiration and innovation to our  products every day. <br><br>Every Vans' product combines classic style with  modern design, comfort and technology, creating an original and authentic mix sold in the best board shops and lifestyle retailers around the world. as well as Vans own network of brand stores and e-commerce sites.
+</p>
+</div>
+
+<section>
+
+<div class="table">
+  <div id="tablecontent">
+    <div>Junkyard</div>
+    <div>Stadium</div>
+  </div>
+  <div id="tablecontent">
+    <div>Hollywood</div>
+    <div>Quicksilver</div>
+  </div>
+</div>
+
+</section>
+
+<section>
+
+<div id="container">
+<header>
+<p>header</p>
+</header>
+
+<div id="inline-container">
+<nav>
+<p>navigation</p>
+</nav>
+
+<article>
+<p>article</p>
+</article>
+
+<aside>
+<p>Sidebar</p>
+</aside>
+</div>
+
+<footer>
+<p>footer</p>
+</footer>
+</div>
+
+</section>
+
+
+</body>
+</html>
