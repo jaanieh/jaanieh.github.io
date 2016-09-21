@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> Uppg7 </title>
+
+<style>
+body {
+background-color: lightgrey;
+}
+
+#container {
+display: inline-flex;
+flex-direction: row;
+}
+
+#flexitem {
+flex: 1 1 auto;
+padding: 2px;
+font-family: tahoma;
+
+}
+
+#color {
+border-radius: 20px;
+background-color: white;
+height: 200px;
+}
+
+@media (min-width: 600px) and (max-width: 1050px){
+
+#container {
+display: flex;
+flex-direction: column;
+}
+#flexitem {
+flex: 1 1 auto;
+flex-direction: column;
+font-family: tahoma;
+}
+}
+
+#color > div {
+color: white;
+}
+
+.white {
+text-align: center; 
+padding: 30px;
+font-size: 60px;
+font-family: georgia;
+text-shadow: 1px 2px #808080;
+}
+
+@media (max-width: 600px){
+.lightpink {
+display: none;
+}
+.lightgreen {
+display: none;
+}
+.blue {
+display: none;
+}
+}
+
+
+@media  (min-width: 701px) and (max-width:750px) {
+#color {
+background-color: lightgreen;
+}
+.white {
+display: none;
+}
+.lightpink {
+display: none;
+}
+.lightgreen {
+text-align: center; 
+padding: 30px;
+font-size: 60px;
+font-family: georgia;
+}
+.blue {
+display: none;
+}
+
+}
+
+@media (min-width: 751px) and (max-width: 900px){
+#color {
+background-color: lightpink;
+}
+.white {
+display: none;
+}
+.lightpink {
+text-align: center; 
+padding: 30px;
+font-size: 60px;
+font-family: georgia;
+}
+.lightgreen {
+display: none;
+}
+.blue {
+display: none;
+}
+
+}
+
+@media (min-width: 901px) {
+#color {
+background-color: lightblue;
+}
+.white {
+display: none;
+}
+.lightpink {
+display: none;
+}
+.lightgreen {
+display: none;
+}
+.blue {
+text-align: center; 
+padding: 30px;
+font-size: 60px;
+font-family: georgia;
+}
+}
+
+
+
+</style>
+
+</head>
+<body>
+
+
+<div id="container">
+
+<div id="flexitem">
+Detta är ett
+</div>
+<div id="flexitem">
+responsivt
+</div>
+<div id="flexitem">
+exempel
+</div>
+
+</div>
+
+
+<div id="color">
+<div class="white">
+Vit
+</div>
+<div class="lightgreen">
+Ljusgrön
+</div>
+<div class="lightpink">
+ljusrosa
+</div>
+<div class="blue">
+ljusblå
+</div>
+
+</div>
+
+</body>
+
+</html>
