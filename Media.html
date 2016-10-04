@@ -6,18 +6,17 @@
 <style>
 
 body {
-background-color: black;
+background-color: white;
 }
-div {
+.title {
 font-size: 26px;
-position: relative;
-left: 200px;
+text-align: center;
 color: white;
-font-family: Arial Black;
+font-family: 'century gothic';
+text-shadow: 2px 2px #888888;
 }
 
 p {
-position: relative;
 font-size: 12px;
 width: 600px;
 text-align: center;
@@ -26,15 +25,43 @@ font-family: verdana;
 }
 
 video, audio {
-position: relative;
-left: 100px;
+padding: 10px;
+margin: auto;
+width: 300px;
+}
+
+.container {
+padding-top: 40px;
+width: 90%;
+margin: auto;
+background-color: lightpink;
+border-radius: 20px;
+height: 350px;
+box-shadow: 5px 5px 5px #888888;
+}
+
+.flex {
+display: flex;
+flex: inline-flex;
+margin: auto;
 }
 </style>
 </head>
 <body>
+<div class="container">
+<div class="flex">
+<div class="title">Attila - About That Life
+<br><p>Youtube-video</p>
+</div>
 
-<div>Attila - About That Life</div>
-<p>Youtube-video</p>
+<div class="title">MitiS - What We Saw (Original Mix)
+<p>Ljudspår</p>
+</div>
+
+</div>
+
+<div class="flex">
+
 <video controls>
 	<source src="Media/AttilaAboutThatLife.mp4" type="video/mp4">
 <source src="Media/AttilaAboutThatLife.mp4" type="video/mp4">
@@ -42,13 +69,12 @@ left: 100px;
 
 
 </video>
-<br><br><br>
-<div>MitiS - What We Saw (Original Mix)</div>
-<p>Ljudspår</p>
+
 <audio controls>
 <source src="Media/MitiSWhatWeSaw(OriginalMix).mp3" type="audio/mpeg">
 </audio>
-
+</div>
+</div>
 
 
 </body>
