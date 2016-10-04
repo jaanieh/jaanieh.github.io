@@ -7,10 +7,10 @@
 	<link rel="stylesheet" media="screen" href="style.css?v=8may2013">
 	<link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.csszengarden.com/zengarden.xml">
 
-
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="author" content="Dave Shea">
+	<meta name="author" content="Janie">
 	<meta name="description" content="A demonstration of what can be accomplished visually through CSS-based design.">
 	<meta name="robots" content="all">
 
@@ -51,8 +51,9 @@
 -->
 
 <body id="css-zen-garden">
-<div class="page-wrapper">
-
+<div class="container-fluid page-wrapper">
+<div class="row">
+<div class="hidden-sm hidden-xs">
 	<section class="intro" id="zen-intro">
 		<header role="banner">
 			<h1>CSS Zen Garden</h1>
@@ -63,7 +64,8 @@
 			<p>A demonstration of what can be accomplished through <abbr title="Cascading Style Sheets">CSS</abbr>-based design. Select any style sheet from the list to load it into this page.</p>
 			<p>Download the example <a href="/examples/index" title="This page's source HTML code, not to be modified.">html file</a> and <a href="/examples/style.css" title="This page's sample CSS, the file you may modify.">css file</a></p>
 		</div>
-
+	</div>
+<div class="col-sm-12 col-md-5 col-lg-5">
 		<div class="preamble" id="zen-preamble" role="article">
 			<h3>The Road to Enlightenment</h3>
 			<p>Littering a dark and dreary road lay the past relics of browser-specific tags, incompatible <abbr title="Document Object Model">DOM</abbr>s, broken <abbr title="Cascading Style Sheets">CSS</abbr> support, and abandoned browsers.</p>
@@ -99,7 +101,7 @@
 			<p>This is a learning exercise as well as a demonstration. You retain full copyright on your graphics (with limited exceptions, see <a href="http://www.mezzoblue.com/zengarden/submit/guidelines/">submission guidelines</a>), but we ask you release your <abbr title="Cascading Style Sheets">CSS</abbr> under a Creative Commons license identical to the <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" title="View the Zen Garden's license information.">one on this site</a> so that others may learn from your work.</p>
 			<p role="contentinfo">By <a href="http://www.mezzoblue.com/">Dave Shea</a>. Bandwidth graciously donated by <a href="http://www.mediatemple.net/">mediatemple</a>. Now available: <a href="http://www.amazon.com/exec/obidos/ASIN/0321303474/mezzoblue-20/">Zen Garden, the book</a>.</p>
 		</div>
-
+</div>
 		<footer>
 			<a href="http://validator.w3.org/check/referer" title="Check the validity of this site&#8217;s HTML" class="zen-validate-html">HTML</a>
 			<a href="http://jigsaw.w3.org/css-validator/check/referer" title="Check the validity of this site&#8217;s CSS" class="zen-validate-css">CSS</a>
@@ -107,10 +109,10 @@
 			<a href="http://mezzoblue.com/zengarden/faq/#aaa" title="Read about the accessibility of this site" class="zen-accessibility">A11y</a>
 			<a href="https://github.com/mezzoblue/csszengarden.com" title="Fork this site on Github" class="zen-github">GH</a>
 		</footer>
-
+</div>
 	</div>
-
-
+<div class="row">
+<div class="hidden-sm hidden-xs">
 	<aside class="sidebar" role="complementary">
 		<div class="wrapper">
 
@@ -182,8 +184,8 @@
 			</div>
 		</div>
 	</aside>
-
-
+</div>
+</div>
 </div>
 
 <!--
