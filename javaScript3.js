@@ -270,6 +270,9 @@ function addToDrawings(){
 clearCanvas.addEventListener("click", function(event){
   
   context.clearRect(0, 0, 400, 400);
+   jsonText.innerHTML = "";
+   json.style.display = "none";
+   drawings = [];
 
 })
 
