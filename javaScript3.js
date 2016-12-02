@@ -80,6 +80,11 @@ addColor.addEventListener("click", function(event){
 	status.innerText = "Fären lades till i listan";
 })
 
+newColor.addEventListener("click", function(event){
+	status.innerText = "Ange en färg i hexkod-format";
+	
+})
+
 // Prototyper till geometriska figurer // 
 // Cirkel//
 function Circle(centerX, centerY, radius){
