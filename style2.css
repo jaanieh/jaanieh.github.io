@@ -1,0 +1,176 @@
+body {
+  background-color: #150f11;
+  color: black;
+  margin: 0px;
+  padding: 0px;
+  
+}
+
+
+#showMenu {
+  color: white;
+  font-family: Century Gothic;
+  font-size: 40px;
+  /*border: 1px solid white; */
+  border-radius: 10px; 
+  display: inline;
+  padding: 5px;
+  margin: 5px;
+  box-shadow: 1px 1px 1px white; 
+  
+}
+
+#menuList {
+  display: inline-block;
+  background-color: white;
+  list-style-type: none;
+  color: black;
+  font-family: Century Gothic;
+  font-size: 14px;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  /*margin-left: 10px;*/ 
+}
+
+li {
+  
+  border: 1px dotted gray;
+  border-radius: 20px;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+#cancel {
+  border: 1px dotted gray;
+  border-radius: 20px;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  color: white;
+  font-family: Century Gothic;
+}
+
+
+#statusbar{
+  margin: 20px;
+   display: inline-block;
+  background-color: white;
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 5px;
+  font-family: Century Gothic;
+}
+
+#myCanvas {
+  
+  position: relative;
+  margin: 1px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+select {
+  color: white;
+  background: black;
+  border-radius: 6px;
+  padding: 5px;
+ 
+}
+
+select option[id="rosa"]{
+    background: hotpink;
+  
+}
+
+select option[id="lila"]{
+    background: purple;
+
+}
+
+select option[id="green"]{
+    background: green;
+}
+
+select option[id="svart"]{
+    background: black;
+}
+
+#newColor {
+  margin-top: 15px;
+  padding: 3px;
+  width: 90px;
+
+  
+}
+
+#addColor {
+  border: 1px dotted gray;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  margin-top: 5px;
+  color: white;
+  font-family: Century Gothic;
+  font-size: 12px;
+  
+}
+
+
+header, nav, article, aside, footer {
+/*border: 1px dotted ;*/
+border-radius: 10px;
+padding: 10px;
+ margin: 3px;
+
+}
+
+header {
+/*flex: 1 1 auto;*/
+background-color: black;
+}
+
+
+nav {
+/*flex: 1 1 150p;*/
+background-color: black;
+height: 400px;
+width: 150px;
+}
+
+article {
+/*flex: 4 1 300px;*/
+background-color: black;
+}
+
+
+aside{
+  background-color: black;
+}
+
+#JSON {
+  
+  border-radius: 20px;
+  background-color: black; 
+  color: white;
+  font-family: Century Gothic; 
+  text-align: center;
+}
+
+footer {
+flex: 1 1 auto;
+background-color: white;
+}
+
+#container > * {
+flex: 1 1 auto;
+margin: auto;
+width: 800px;
+}
+
+#inline-container {
+  
+display: flex;
+flex-direction: row;
+flex: 2 1 auto;}
