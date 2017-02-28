@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="shortcut icon" href="https://jaanieh.github.io/favicon.ico" />
+<title>Ja9 - Frontend Utveckling</title>
+
+	<style>
+body {
+	background: #000 url("IMG_9459.jpg") no-repeat fixed center;
+	background-size: 100% 100%;
+}	
+
+#header {
+position: relative;
+background-image: url("Media/mockupGallery.png");
+background-repeat: no-repeat;
+background-position: center top;
+height: 120px;
+z-index: 3;
+}
+	
+#gallery {
+background-color: #000;
+margin: auto;
+width: 800px;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  /*margin: 100px auto;*/
+  margin-top: 2px;
+  border: 1px solid #000000;
+  border: 10px solid #303030;
+}
+
+#navigation {
+display: flex;
+list-style: none;
+
+}
+	
+#full-picture{
+	margin: auto;
+	width: 500px;
+  height: 700px;
+  overflow: hidden;
+ 
+}
+
+.small {
+	/*width: 100px;
+	height: auto;*/
+	margin: 10px;
+	border: 10px solid #303030;
+	
+}
+
+.big {
+margin-bottom: 100px;
+}
+
+#transparant{
+background-color: rgba(0,0,0,.8);
+	width: 100%;
+	height: 100%;
+	position: fixed; 
+	top: 0%;
+	left: 0%;
+	z-index: 1;
+	}
+	
+	</style>
+	
+</head>
+<body>
+
+<div id="header"></div>
+
+<div id="gallery">
+
+  <ul id="navigation">
+    <li class="small"><a href="#pic1"><img alt="" src="Media/8.jpg" width="100"; /></a></li>
+    <li class="small"><a href="#pic2"><img alt="" src="Media/9.jpg" width="100"; /></a></li>
+    <li class="small"><a href="#pic3"><img alt="" src="Media/10.jpg" width="100"; /></a></li>
+    <li class="small"><a href="#pic4"><img alt="" src="Media/11.jpg" width="100";/></a></li>
+    <li class="small"><a href="#pic5"><img alt="" src="Media/12.jpg" width="100";/></a></li>
+  </ul>
+  <div id="full-picture">
+    <div class="big"><a name="pic1"></a><img alt="" src="Media/8.jpg" width="500" /></div>
+    <div class="big"><a name="pic2"></a><img alt="" src="Media/9.jpg" width="500"/></div>
+    <div class="big"><a name="pic3"></a><img alt="" src="Media/10.jpg" width="500"/></div>
+    <div class="big"><a name="pic4"></a><img alt="" src="Media/11.jpg" width="500"/></div>
+    <div class="big"><a name="pic5"></a><img alt="" src="Media/12.jpg" width="500"/></div>
+  </div>
+</div>
+
+<div id="transparant"></div>
+
+</body>

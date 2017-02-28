@@ -1,0 +1,131 @@
+body {
+background: #000 url("IMG_9459.jpg") no-repeat fixed center;
+background-size: 100% 100%;
+font-family: arial black;
+font-size: 24px;
+}
+
+.Ja9 {
+background-image: url("janie.png");
+background-repeat: no-repeat;
+background-position: center top;
+height: 200px;
+border-radius: 10px;
+opacity: 0.2;
+
+}
+
+/*.Ja9:hover {
+opacity: 0.3;
+}*/
+
+
+
+.FU {           /* var används denna? */
+font-style: italic;
+font-family: georgia;
+font-size: 25px;
+color: #484245;
+}
+
+
+
+
+
+a {
+font-family: Century Gothic;
+text-decoration: none;
+color: #3e3239;
+text-shadow: 1px 1px 3px gray;
+}
+
+a:hover {
+color: #1f191d;
+position: relative;
+left: 6px;
+bottom: 1px;
+
+}
+
+.links {
+width: 320px;
+position: fixed;
+border-left: 5px solid #1f191d;
+background: rgba(225, 225, 225, 0.6);
+border-radius: 20px
+
+}
+
+#htmlcssLinks {
+	top: 230px;
+	left: 100px;
+	padding-top: 10px;
+	
+}
+
+#projektLinks {
+	top: 230px;
+	left: 500px;
+	padding-top: 10px;
+}
+
+#kontaktLinks {
+	top: 230px;
+	left: 900px;
+	padding-top: 10px;
+	
+}
+
+#htmlcss {
+color: white;
+position: absolute;
+background-color: black;
+top: 198px;
+left: 120px;
+padding-left: 20px;
+padding-right: 20px;
+font-family: Century Gothic;
+font-size: 40px;
+border-radius: 10px;
+opacity: 0.8;
+}
+
+#projekt {
+color: white;
+position: absolute;
+background-color: black;
+top: 198px;
+left: 520px;
+padding-left: 20px;
+padding-right: 20px;
+font-family: Century Gothic;
+font-size: 40px;
+border-radius: 10px;
+opacity: 0.8;
+	
+}
+
+#kontakt {
+	color: white;
+	position: absolute;
+	background-color: black;
+	top: 198px;
+	left: 920px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-family: Century Gothic;
+	font-size: 40px;
+	border-radius: 10px;
+	opacity: 0.8;
+		
+}
+
+.text {
+font-family: Century Gothic;
+font-size: 12px;
+font-weight: bold;
+
+}
+
+ul {
+  list-style: none;}
