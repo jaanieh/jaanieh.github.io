@@ -1,0 +1,242 @@
+
+
+.stylish-input-group .input-group-addon{
+    /*background: white !important; */
+	
+
+}
+.stylish-input-group .form-control{
+	border-right:0;
+	box-shadow:0 0 0;
+	border-color:#ccc;
+	border-radius: 20px;
+
+}
+.stylish-input-group button{
+	border-radius: 20px;
+    border:0;
+    background:transparent;
+
+}
+
+
+#imaginary_container {
+	margin: auto;
+	max-width: 700px;
+	text-align: center;
+	
+}      
+
+
+.header {
+	background-image: url("LOGO.png");
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 200px;
+	margin-bottom: 6%; 
+}
+
+
+#movie{
+	max-width: 700px;
+	margin: auto;
+	height: auto;
+	border-radius: 20px;
+	border: 1px solid gray;
+	background-color: white;
+	font-family: verdana;
+	padding: 10px;
+	padding-left: 20px;
+	padding-bottom: 50px;
+	text-align: left;
+	font-size: 14px;
+}
+
+#info {
+	max-width: 450px; 
+}
+
+#poster {
+
+	margin: auto; 
+	width: 150px;
+}
+
+.empty {
+
+	width: 150px;
+	margin-bottom: 10px;
+}
+
+button {
+	
+	float: right;
+	/*margin-right: 30px;*/
+	display: inline-block;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	text-shadow: 2px 2px 5px #080808;
+	font-family: tahoma;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+
+	   -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: #5cd65c;
+    color: black;
+}
+
+#viewTrailer {
+	background-color: #0084cc;
+	float: left;
+	
+}
+
+#saveButton {
+	background-color: #27ac27;
+	float: right;
+	
+}
+
+.logo{
+  text-align: center;
+  max-width: 100%;
+  height: auto;
+}
+
+
+body {
+    background-image:url("background1.png");
+	background-repeat: no-repeat;
+	background-position: center 50px;; 
+	text-align: center;
+}
+
+.rubrik {
+	position: relative;
+	font-family: Century Gothic;
+	font-weight: bold;
+	font-size: 48px;
+	color: #4b4b4b;
+	color: rgba(75, 75, 75, 0.4)
+}
+
+.smRubrik {
+	font-family: Century Gothic;
+	font-weight: bold;
+	font-size: 30px;
+	color: #fd4b4b;
+	text-align: left;
+	padding-bottom: 7px;
+}
+
+
+.savedMovies {
+	max-width: 700px;
+	margin: auto;
+	height: 90px;
+	border-radius: 20px;
+	border: 1px solid gray;
+	background-color: white;
+	font-family: Century Gothic;
+	font-weight: bold;
+	font-size: 3em;
+	color: #fd4b4b;
+	text-align: left;
+	padding: 10px;
+	padding-left: 30px;
+}
+
+.rate {
+	float: right;
+	padding: 10px;
+}
+#searchResult{
+	margin-bottom:30px;
+	border-color:#ccc;
+	border-style: solid;
+	font-family: verdana;
+
+
+
+}
+         
+.flex-container {
+	display: flex;
+	flex-direction: row; 
+	flex-wrap: wrap; 
+
+}
+
+.flex-item {
+	flex: 1 1 auto;
+}
+
+
+@media (max-width: 700px) {
+	#movie {
+		max-width: none; 
+		 
+	}
+	
+	.savedMovies {
+		
+		max-width: none;
+		height: auto;
+		text-align: center; 
+	}
+	
+	
+	.rate {
+		float: none; 
+		
+	}
+	
+	.rubrik {
+		font-size: 30px;
+		
+	}
+	
+
+}
+
+@media (max-width: 565px) {
+	
+	.header {
+	
+	background-image: url("LOGOmini.png");
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: contain;	
+	height: 150px;
+	margin-bottom: 3%; 
+	}
+	
+}
+
+#trailerPopup {
+	display: none;
+	background-color: rgba(0,0,0,.85);
+	width: 100%;
+	height: 100%;
+	position: fixed; 
+	top: 0%;
+	left: 0%;
+	z-index: 1001;
+
+	
+	
+}
+
+.play {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+

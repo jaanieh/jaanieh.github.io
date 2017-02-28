@@ -1,0 +1,56 @@
+/* set all stars to empty */
+.flex-item:nth-child(2) .rating {
+  float: right;
+}
+@media (max-width: 565px)
+{
+  /* to make savedMovies rating appears centered */
+  .flex-item:nth-child(2) .rating {
+    float: none;
+  }
+}
+.savedMovies .close {
+  margin-top: 6px;
+  padding-bottom: 2px;
+}
+.stars-container {
+  display: inline-block;
+  font-size: 1.5em;
+}
+.stars-container-view {
+  font-size: 0.9em;
+  vertical-align: middle;
+}
+
+/* set all stars to empty */
+.stars-container .star {
+  float: right; /*csslint display-property-grouping: false*/
+  display: inline-block;
+  padding: 2px;
+  color: gold;
+}
+.stars-container .rate {
+  cursor: pointer;
+}
+.stars-container .star:before {
+  content:"\2606";
+}
+
+/* set hovered/selected star to filled */
+.star.selected:before {
+  content:"\2605";
+}
+.rate:hover:before {
+  content:"\2605";
+}
+
+/* set all stars after hovered/selected filled */
+.star.selected ~ .star:before {
+  content:"\2605";
+}
+.rate:hover ~ .rate:before {
+  content:"\2605";
+}
+.movie {
+  cursor: pointer;
+}
