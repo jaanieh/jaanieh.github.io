@@ -135,6 +135,7 @@ ul {
 		  
 		background-position: center top;
 		background-size: cover;
+		font-family: arial;
 		  
 	  }
 	  
@@ -151,42 +152,50 @@ ul {
 		  /*position: static;*/
 		  top: 70px;
 		  left: 20px;
+		  font-family: arial;
 	  }
 	  
 	  #projekt {
-		  /*position: static;*/
-		  top: 550px;
+		  position: absolute;
+		  top: 495px;
 		  left: 20px;
+		  font-family: arial;
 	  }
 	   #kontakt {
-		   /*position: static;*/
-		   top: 795px;
+		   position: absolute;
+		   top: 725px;
 		   left: 20px;
+		   font-family: arial;
 	   }
 	  
 	  #htmlcssLinks {
 	
-	margin: auto;
-	margin-top: 40px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+		margin: auto;
+		margin-top: 40px;
+		padding-top: 10px;
+		padding-bottom: 10px;
 	
-}
+	}
 
-#projektLinks {
-	margin: auto;
-	margin-top: 50px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-}
+	#projektLinks {
+		margin: auto;
+		margin-top: 50px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
 
-#kontaktLinks {
-	margin: auto;
-	margin-top: 50px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	#kontaktLinks {
+		margin: auto;
+		margin-top: 50px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		
+	}
 	
-}
-	  
+	a {
+		
+		font-family: arial;
+	}
+		  
 	  
   }
