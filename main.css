@@ -16,8 +16,51 @@ opacity: 0.2;
 
 }
 
+/*  SECTIONS  */
 
+.container {
+    display: block;
+    margin: auto;
+}
 
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 5%; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF THREE  */
+.span3 { width: 100%; }
+.span2 { width: 66.13%; }
+.span1 { width: 32.26%; }
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span3, .span2, .span1 { width: 100%; }
+}
+
+.span_1_of_3 {
+    background-color: black;
+    border-radius: 5px;
+    padding: 35px;
+    color: white;
+    font-family: 'Century Gothic';
+}
 
 .FU {           /* var används denna? */
 font-style: italic;
@@ -26,15 +69,11 @@ font-size: 25px;
 color: #484245;
 }
 
-
-
-
-
 a {
 font-family: Century Gothic;
 text-decoration: none;
 color: #3e3239;
-text-shadow: 1px 1px 3px gray;
+
 }
 
 a:hover {
@@ -45,77 +84,8 @@ bottom: 1px;
 
 }
 
-.links {
-width: 320px;
-position: fixed;
-border-left: 5px solid #1f191d;
-background: rgba(225, 225, 225, 0.6);
-border-radius: 20px
-
-}
-
-#htmlcssLinks {
-	top: 230px;
-	left: 100px;
-	padding-top: 10px;
-	
-}
-
-#projektLinks {
-	top: 230px;
-	left: 500px;
-	padding-top: 10px;
-}
-
-#kontaktLinks {
-	top: 230px;
-	left: 900px;
-	padding-top: 10px;
-	
-}
-
-#htmlcss {
-color: white;
-position: absolute;
-background-color: black;
-top: 198px;
-left: 120px;
-padding-left: 20px;
-padding-right: 20px;
-font-family: Century Gothic;
-font-size: 40px;
-border-radius: 10px;
-opacity: 0.8;
-}
-
-#projekt {
-color: white;
-position: absolute;
-background-color: black;
-top: 198px;
-left: 520px;
-padding-left: 20px;
-padding-right: 20px;
-font-family: Century Gothic;
-font-size: 40px;
-border-radius: 10px;
-opacity: 0.8;
-	
-}
-
-#kontakt {
-	color: white;
-	position: absolute;
-	background-color: black;
-	top: 198px;
-	left: 920px;
-	padding-left: 20px;
-	padding-right: 20px;
-	font-family: Century Gothic;
-	font-size: 40px;
-	border-radius: 10px;
-	opacity: 0.8;
-		
+p {
+    font-size: 12px;
 }
 
 .text {
@@ -126,7 +96,9 @@ font-weight: bold;
 }
 
 ul {
-  list-style: none;}
+  list-style: none;
+    padding-left: 0;
+}
   
   
   @media screen and (max-width: 500px), screen and (max-device-width: 500px)
