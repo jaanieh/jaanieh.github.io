@@ -1,62 +1,143 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<link rel="shortcut icon" href="https://jaanieh.github.io/favicon.ico" />
-<title>Ja9 - Frontend Utveckling</title>
+    <head>
+        <title>Ja9 - Galleri</title>
+        <link rel="stylesheet" type="text/css" href="main.css"/>
+        
+        <!-- Bootstrap -->
+         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+       
+    </head>
+    <body>
+        <!--<div class="rubrik">galleri.</div>-->
+        <div class="Ja9 rubrik">Janie Portfolio</div>
+        
+            
+  <div class="infoContainer">
+        <div class="infotext">
+                <ul>
+                <li><a href="https://jaanieh.github.io/gallery.html">Galleri <span class="text">- Yellowhammer Mockup</span></a></li>
+                <li><a href="http://awesome-movie-database.funkar.nu/">A.M.D <span class="text"> - Grupparbete</span></a></li>
+                <li><a href="https://jaanieh.github.io/BookLibrary/">Library <span class="text">- Your own book library</span></a></li>
+                </ul>
+            <div class="underRubrik">PROJEKT</div>
+            </div>
+      <div class="infotext">
+            
+                <ul class="info">
+                    <li><strong>Studie-portfolio</strong></li>
+                    <li>Frontend-utveckling</li>
+                    <li>EC-utbildning</li>
+                    <li>2016-2017</li>
+                    <li>janie.mobacker@live.se</li>
+          </ul>
+          <div class="underRubrik">INFO.</div>
+            </div>
+       
+        <div class="infotext">
+                <ul>
+                 <li><a href="https://jaanieh.github.io/ChatBox/">#ChatBox <span class="text">- Firebase</span></a></li>
+                    <li><a href="https://jaanieh.github.io/todolist/">To-Do-List <span class="text">- Firebase</span></a></li>
+                    <li><a href="https://jaanieh.github.io/githubAuth/">Autentisering <span class="text">- Firebase NoDesign</span></a></li>
+                    <li><a href="https://jaanieh.github.io/reactmath/">Math <span class="text">- React</span></a></li>
+                </ul>
+            <div class="underRubrik">PROJEKT</div>
+            </div>
+         </div>
+        
+        
+        <footer>COPYRIGHTS © JANIE MOBACKER 2017</footer>
+            
+        <script>
+// ***************** SLIDESHOW ******************** //
+            
+            $(function(){
+                $('.slideContent img:gt(0)').hide();
+                setInterval(function(){
+                  $('.slideContent :first-child').fadeOut()
+                     .next('img').fadeIn()
+                     .end().appendTo('.slideContent');}, 
+                  3000);
+            });
 
-	<link rel="stylesheet" type="text/css" href="main.css"> 
-	<meta name="viewport" content="width=device-width" />
-</head>
-<body>
+            
+ //************** IMAGE POPUP **************** //
+            
+    // Hämtar div:en där popupbilden skall visas.         
+        var bigImage = document.getElementById("bigImage");
+    // Skapar ett nytt img-element och döper det till pic. 
+        var pic = document.createElement("img");
+            pic.className="picture";
+          
+        
 
-<div class="Ja9"></div>
+            
+     function popup(img) {
+    //Visar popup:diven onclick
+        var ninjaSldr = document.getElementById("modalPopup");
+        ninjaSldr.parentNode.style.display = "block";
+         var ninjaBG = document.getElementById("cover");
+        ninjaBG.style.display = "block";
+      
+        
+     // Sätter this.img.src (bildlänken som anges i src på varje bild) till variabeln imgLink.  
+         var imgLink = img.src;
+         console.log("url: " + imgLink);
+    // Sätter imgLink till det nya img-elementets src (createElement(img), ovan)
+         pic.src = imgLink;
+    // Lägger till det nya img-elementet med src-länk till div:en bigImage. 
+        bigImage.appendChild(pic);
+        
+    }
+         /*        
+          $(".thumbnail").click(function () {
+              $("#modalPopup").fadeIn(1000);
+              console.log("hej");
+    });
 
-    <div class="container">
-<div class="section group">
-	<div class="col span_1_of_3">
-	<div  class="rubrik" id="htmlcss">HTML & CSS</div>
-<div class="links" id="htmlcssLinks">
-<ul>
-<li><a href="https://jaanieh.github.io/links/Uppgift1.1.html">1.1  <span class="text">Första uppgiften</span></a></li>
-<li><a href="https://jaanieh.github.io/links/Uppgift2.1.html">2.1 <span class="text">These are a few of my favourite things</span></a></li>
-<li><a href="https://jaanieh.github.io/links/Uppgift2.2.html">2.2 <span class="text">OS - tabell 2016</span></a></li>
-<li><a href="https://jaanieh.github.io/links/Uppgift3.1.html">3.1 <span class="text">Block-positioner</span></a></li>
-<li><a href="https://jaanieh.github.io/links/Uppgift3.3Divs.html">3.2 <span class="text">Nästlad div-tabell</span></a></li>
-<li><a href="https://jaanieh.github.io/links/ZENGarden/index.html">4.2 <span class="text">ZEN Garden</span></a></li>
-<li><a href="https://jaanieh.github.io/links/Media.html">5.1 <span class="text">Media</span></a></li>
-<li><a href="https://jaanieh.github.io/links/Uppgift5.3.html">5.3 <span class="text">Navigation & Formulär</span></a></li>
-<li><a href="https://jaanieh.github.io/links/Uppgift6.1.html">6.1 <span class="text">VANS - wrap & flex</span></a></li>
-<li><a href="https://jaanieh.github.io/links/Uppgift7.html">7 <span class="text">Responsivt - Mediaqueries</span></a></li>
-<li><a href="https://jaanieh.github.io/lab3.html">Lab 3 <span class="text"> - CANVAS</span></a></li>
+            $(".closeCross").click(function () {
+               $("#modalPopup").fadeOut(1000);
+                 $("#cover").fadeOut(1000);
+            });*/
+            
+    //****************** HORIZONTAL SCROLL **********************//
+            
+            $(function() {
+    var $container = $('.gallery'),
+        scroll = $container.width();
+    $('#arrowRight').hover(function() {
+        $container.animate({
+            'scrollLeft': 2000
+        },{duration: 4000, queue: false});
+    }, function(){
+        $container.stop();
+    });
+    $('#arrowLeft').hover(function() {
+        $container.animate({
+            'scrollLeft': -500
+        },{duration: 4000, queue: false});
+    }, function(){
+        $container.stop();
+    });
 
-</ul>
-</div>
-	</div>
-	<div class="col span_1_of_3">
-	<div class="rubrik" id="projekt">PROJEKT</div>
-<div class="links" id="projektLinks">
-<ul>
-<li><a href="https://jaanieh.github.io/gallery.html">Galleri <span class="text">- Yellowhammer Mockup</span></a></li>
-<li><a href="http://awesome-movie-database.funkar.nu/">A.M.D <span class="text"> - Grupparbete</span></a></li>
-<li><a href="https://jaanieh.github.io/BookLibrary/">Library <span class="text">- Your own book library</span></a></li>
-<li><a href="https://jaanieh.github.io/ChatBox/">#ChatBox <span class="text">- Firebase</span></a></li>
-<li><a href="https://jaanieh.github.io/todolist/">To-Do-List <span class="text">- Firebase</span></a></li>
-<li><a href="https://jaanieh.github.io/githubAuth/">Autentisering <span class="text">- Firebase NoDesign</span></a></li>
-<li><a href="https://jaanieh.github.io/reactmath/">Math <span class="text">- React</span></a></li>
-</ul>
-</div>
-	</div>
-	<div class="col span_1_of_3">
-	<div class="rubrik" id="kontakt">INFO</div>
-<div class="links">
-<p>Studie-portfolio</p>
-<p>EC-utbildning 2016-2017</p>
-<span class="text">janie.mobacker@live.se</span>
-</div>
-	</div>
-</div>
-        </div>
+});
+            
+    //******************* ZOOM BIG PICtuRE ******************//
+            
+        $(".image").click(function () {
+      $("#modalPopup").fadeIn(1000);
+    });
 
-</body>
+    $(".closeCross").click(function () {
+       $("#modalPopup").fadeOut(1000);
+        $("#cover").fadeOut(1000);
+    });
+            
+    
+
+        </script>
+    </body>
 </html>
