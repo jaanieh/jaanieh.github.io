@@ -175,6 +175,10 @@ textarea:focus + label {
     bottom: 90%;
 }
 
+input:focus, textarea:focus {
+    outline: 0;
+}
+
 input:focus::placeholder, textarea:focus::placeholder {
   opacity: 0;
 }
