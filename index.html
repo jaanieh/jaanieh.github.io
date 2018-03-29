@@ -1,143 +1,97 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Ja9 - Galleri</title>
-        <link rel="stylesheet" type="text/css" href="main.css"/>
-        
-        <!-- Bootstrap -->
-         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-       
-    </head>
-    <body>
-        <!--<div class="rubrik">galleri.</div>-->
-        <div class="Ja9 rubrik">Janie Portfolio</div>
-        
-            
-  <div class="infoContainer">
-        <div class="infotext">
-                <ul>
-                <li><a href="https://jaanieh.github.io/gallery.html">Galleri <span class="text">- Yellowhammer Mockup</span></a></li>
-                <li><a href="http://awesome-movie-database.funkar.nu/">A.M.D <span class="text"> - Grupparbete</span></a></li>
-                <li><a href="https://jaanieh.github.io/BookLibrary/">Library <span class="text">- Your own book library</span></a></li>
-                </ul>
-            <div class="underRubrik">PROJEKT</div>
-            </div>
-      <div class="infotext">
-            
-                <ul class="info">
-                    <li><strong>Studie-portfolio</strong></li>
-                    <li>Frontend-utveckling</li>
-                    <li>EC-utbildning</li>
-                    <li>2016-2017</li>
-                    <li>janie.mobacker@live.se</li>
-          </ul>
-          <div class="underRubrik">INFO.</div>
-            </div>
-       
-        <div class="infotext">
-                <ul>
-                 <li><a href="https://jaanieh.github.io/ChatBox/">#ChatBox <span class="text">- Firebase</span></a></li>
-                    <li><a href="https://jaanieh.github.io/todolist/">To-Do-List <span class="text">- Firebase</span></a></li>
-                    <li><a href="https://jaanieh.github.io/githubAuth/">Autentisering <span class="text">- Firebase NoDesign</span></a></li>
-                    <li><a href="https://jaanieh.github.io/reactmath/">Math <span class="text">- React</span></a></li>
-                </ul>
-            <div class="underRubrik">PROJEKT</div>
-            </div>
-         </div>
-        
-        
-        <footer>COPYRIGHTS © JANIE MOBACKER 2017</footer>
-            
-        <script>
-// ***************** SLIDESHOW ******************** //
-            
-            $(function(){
-                $('.slideContent img:gt(0)').hide();
-                setInterval(function(){
-                  $('.slideContent :first-child').fadeOut()
-                     .next('img').fadeIn()
-                     .end().appendTo('.slideContent');}, 
-                  3000);
-            });
+<head>
+    <title>Ja9 Portfolio</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 
-            
- //************** IMAGE POPUP **************** //
-            
-    // Hämtar div:en där popupbilden skall visas.         
-        var bigImage = document.getElementById("bigImage");
-    // Skapar ett nytt img-element och döper det till pic. 
-        var pic = document.createElement("img");
-            pic.className="picture";
-          
-        
-
-            
-     function popup(img) {
-    //Visar popup:diven onclick
-        var ninjaSldr = document.getElementById("modalPopup");
-        ninjaSldr.parentNode.style.display = "block";
-         var ninjaBG = document.getElementById("cover");
-        ninjaBG.style.display = "block";
-      
-        
-     // Sätter this.img.src (bildlänken som anges i src på varje bild) till variabeln imgLink.  
-         var imgLink = img.src;
-         console.log("url: " + imgLink);
-    // Sätter imgLink till det nya img-elementets src (createElement(img), ovan)
-         pic.src = imgLink;
-    // Lägger till det nya img-elementet med src-länk till div:en bigImage. 
-        bigImage.appendChild(pic);
-        
-    }
-         /*        
-          $(".thumbnail").click(function () {
-              $("#modalPopup").fadeIn(1000);
-              console.log("hej");
-    });
-
-            $(".closeCross").click(function () {
-               $("#modalPopup").fadeOut(1000);
-                 $("#cover").fadeOut(1000);
-            });*/
-            
-    //****************** HORIZONTAL SCROLL **********************//
-            
-            $(function() {
-    var $container = $('.gallery'),
-        scroll = $container.width();
-    $('#arrowRight').hover(function() {
-        $container.animate({
-            'scrollLeft': 2000
-        },{duration: 4000, queue: false});
-    }, function(){
-        $container.stop();
-    });
-    $('#arrowLeft').hover(function() {
-        $container.animate({
-            'scrollLeft': -500
-        },{duration: 4000, queue: false});
-    }, function(){
-        $container.stop();
-    });
-
-});
-            
-    //******************* ZOOM BIG PICtuRE ******************//
-            
-        $(".image").click(function () {
-      $("#modalPopup").fadeIn(1000);
-    });
-
-    $(".closeCross").click(function () {
-       $("#modalPopup").fadeOut(1000);
-        $("#cover").fadeOut(1000);
-    });
-            
+    <script type="text/javascript" src="script.js"></script>
     
 
-        </script>
-    </body>
+
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container">
+    <a class="scrollable" href="#top"><img src="logo.jpg"></a>
+    <ul class="navbar-right">
+      <li><a class="scrollable" href="#top">About</a></li>
+      <li><a class="scrollable" href="#portfolio">Portfolio</a></li>
+      <li><a class="scrollable" href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+
+<main>
+  <header class="hero target" id="top" name="home">
+    <div class="intro-text">
+      <h2>About</h2>
+      <blockquote><p>One creative Front-End Developer girl, devoted to digital Design.<br>Educated in Front End Developement, Web Design and Photography.<br>Owner and producer for <a href="http://janiecornshop.etsy.com" target="_blank">JanieCornShop</a> on my spare time.</p>
+       <footer><cite>Janie Mobacker</cite></footer>
+      </blockquote>
+      <span class="skills text-center">Frontend Developer - Web Designer - Shop Owner</span>
+    </div>
+    <img src="https://media.licdn.com/dms/image/C5603AQHIaQXf0il5fw/profile-displayphoto-shrink_200_200/0?e=1526288400&v=alpha&t=VIGNwTgX7sc518XhvhtpS7j5JITNZjTle3dlwINDEQs"/>
+
+  </header>
+  <section id="portfolio" class="target">
+    <h2>Portfolio</h2>
+    <hr>
+    <ul class="grid">
+        <li><a target="_blank" href="https://jaanieh.github.io/exarb/app/index.html"><div class="thumbnail"><img src="http://i141.photobucket.com/albums/r80/jewn/Skarmavbild%202018-03-15%20kl.%2010.28.18.png"/><div class="caption text-center"><strong>EXAM WORK</strong><hr>Photo Portfolio with GULP and Nunjucks</div></div></a></li>
+        <li><a target="_blank" href="https://jaanieh.github.io/projecttemplate/"><div class="thumbnail"><img src="ja9project.png"/><div class="caption text-center"><strong>PROJECT TEMPLATE</strong><hr>By Ja9</div></div></a></li>
+        <li><a target="_blank" href="https://jaanieh.github.io/ChatBox/"><div class="thumbnail"><img src="http://i141.photobucket.com/albums/r80/jewn/Skarmavbild%202018-03-16%20kl.%2013.17.41.png"/><div class="caption text-center"><strong>CHATBOX</strong><hr>Chat Site with Firebase</div></div></a></li>
+      <li><div class="thumbnail"><img src="http://i141.photobucket.com/albums/r80/jewn/Skarmavbild%202018-03-15%20kl.%2009.19.50.png"/><div class="caption text-center"><strong>MOCKUP DESIGN</strong><hr>Bring Your Dog App for WMYL</div></div></li>
+        <li><div class="thumbnail"><img src="http://i141.photobucket.com/albums/r80/jewn/Skarmavbild%202018-03-19%20kl.%2015.44.56.png"/><div class="caption text-center"><strong>MOCKUP DESIGN</strong><hr>Marknadsplatsen Frolunda Indians</div></div></li>
+    </ul>
+  </section>
+      <div id="contact" class="target"></div>
+  <section class="contact">
+    <h2>Contact</h2>
+    <hr>
+    <div>
+     <form id="contact-form" method="POST" action="https://formspree.io/janie.mobacker@live.se">
+         <!-- ÄNDRA HÄR FÖR TACK-sida -->
+         <input type="hidden" name="_next" value="" />
+        <div class="form-item">
+          <input type="text" name="name" placeholder="Name"/>
+          <label class="label-helper" for="name">Name</label>
+        </div>
+        <div class="form-item">
+          <input type="email" name="email" placeholder="Email"/>
+          <label class="label-helper" for="email">Email</label>
+        </div>
+        <div class="form-item">
+          <textarea id="message" name="message" rows="5" placeholder="Message"></textarea>
+          <label for="message">Message</label>
+        </div>
+         <button type="submit">Send</button>
+      </form>
+    </div>
+       <div class="contact-text">
+         <h3>Want to contact me?</h3><p>Feel free to ask any questions, to get my resume, if you are intrerested in working with me or if you just want to chat.<br>I'm not dangerous, I swear! </p>
+    </div>
+
+  </section>
+</main>
+<footer>
+   <div>
+      <h3>Around the Web</h3>
+      <ul>
+        <li><a class="button social" href="https://www.linkedin.com/in/janie-mobacker-522633128/"><i class="fa fa-fw fa-linkedin"></i></a></li>
+        <li><a class="button social" href="https://github.com/jaanieh"><i class="fa fa-fw fa-github"></i></a></li>
+        <li><a class="button social" href="https://www.instagram.com/janiecornshop/"><i class="fa fa-fw fa-instagram"></i></a></li>
+      </ul>
+    </div>
+    <div class="footer-below">
+        <p>Site by Janie Mobacker</p>
+    </div>
+</footer>
+
+</body>
 </html>
