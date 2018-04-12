@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa:300');
+@import url('https://fonts.googleapis.com/css?family=Oswald:300');
+
 body {
   background-color: #e7e7e7 !important;
 }
@@ -6,7 +8,7 @@ p {
   font-family: 'Comfortaa', cursive;
   line-height: 1.9;
 }
-main header, .container, #portfolio .grid {
+main header, .container, .portfolio .grid {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
@@ -49,10 +51,16 @@ main header, .container, #portfolio .grid {
   text-decoration: none;
 }
 .hero {
-
   width: 80%;
   margin: auto;
 }
+
+h2 {
+    font-family: 'Oswald', sans-serif !important;
+    letter-spacing: 3px;
+    font-size: 50px !important;
+}
+
 .hero h2 {
   padding: 20px 0 0 0;
   text-align: center;
@@ -66,6 +74,10 @@ main header, .container, #portfolio .grid {
 .hero .skills {
   display: block;
   color: #919191;
+}
+
+blockquote {
+    border-left: 5px solid #f5f5f5 !important;
 }
 section {
   background-color: #f5f5f5;
@@ -82,22 +94,20 @@ section hr {
   width: 50%;
   border-color: #bcbcbc;
 }
-#portfolio {
-  margin-top: 40px;
-}
-#portfolio .grid {
+
+.portfolio .grid {
   list-style: none;
   max-width: 90%;
 }
-#portfolio .grid li {
+.portfolio .grid li {
   max-width: 400px;
   margin: 10px;
 }
-#portfolio .grid li img {
+.portfolio .grid li img {
   width: 100%;
   min-height: 200px;
 }
-#portfolio .grid li hr {
+.portfolio .grid li hr {
   margin: 8px auto;
 }
 
@@ -120,9 +130,13 @@ ul:hover > li .thumbnail:not(:hover) {
 }
 
 
-#top, #contact {
-  margin-top: 40px;
+#top, #contact, #portfolio {
+  /*margin-top: 40px;*/
+  padding-top: 50px;
+  margin-top: -50px;
+  margin-top: -50px;
 }
+
 form {
   width: 100%;
 }
@@ -169,6 +183,7 @@ input:focus + label, textarea:focus + label {
   opacity: 1;
   bottom: 75%;
   margin: 10px 0;
+  transition: all .6s ease-out;
 }
 
 textarea:focus + label {
