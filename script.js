@@ -1,14 +1,59 @@
-$(document).ready(function () {
-
-  $(window).on('scroll', function() {
-    $('.target').each(function() {
-        if($(window).scrollTop() >= $(this).offset().top - 100) {
-            var id = $(this).attr('id');
-            $('.container ul li a').removeClass('active');
-            $('.container ul li a[href=#'+ id +']').addClass('active');
-        }
-    });
-});
+$(document).ready(function() {
     
+    
+/********** FULLPAGE SCROLL PLUGIN ************/
+    
+    $('#fullpage').fullpage();
+   
+    
+    
+/********** SLIDE ***********/
+    
+jQuery(document).ready(function ($) {
 
-});        
+ 
+    setInterval(function () {
+        moveRight();
+    }, 4000);
+  
+	var slideCount = $('#slider ul li').length;
+	var slideWidth = $('#slider ul li').width();
+	var slideHeight = $('#slider ul li').height();
+	var sliderUlWidth = slideCount * slideWidth;
+	
+	$('#slider').css({ width: slideWidth, height: slideHeight });
+	
+	$('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+	
+    $('#slider ul li:last-child').prependTo('#slider ul');
+
+    function moveLeft() {
+        $('#slider ul').animate({
+            left: + slideWidth
+        }, 200, function () {
+            $('#slider ul li:last-child').prependTo('#slider ul');
+            $('#slider ul').css('left', '');
+        });
+    };
+
+    function moveRight() {
+        $('#slider ul').animate({
+            left: - slideWidth
+        }, 2000, function () {
+            $('#slider ul li:first-child').appendTo('#slider ul');
+            $('#slider ul').css('left', '');
+        });
+    };
+
+    $('a.control_prev').click(function () {
+        moveLeft();
+    });
+
+    $('a.control_next').click(function () {
+        moveRight();
+    });
+
+});    
+
+    
+});
